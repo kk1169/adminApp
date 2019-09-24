@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/component/variable.scss';
+
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: $background;
+  font-family: 'Roboto', sans-serif;
+}
+
+@import './assets/component/sidenav.scss';
+@import './assets/component/header.scss';

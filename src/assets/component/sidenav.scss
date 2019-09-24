@@ -1,0 +1,50 @@
+.side-nav{
+  position:fixed;
+  left:0;
+  top:0;
+  width:15%;
+  height:100%;
+  background: $primary;
+
+  // SIDE NAV HEADER START
+  .side-nav-header{
+    width:100%;
+    float: left;
+    display: block;
+    height: 60px;
+    background: #fff;
+  }
+  //SIDE NAV HEADER END
+
+}
+
+
+
+/***********************************************
+SIDE NAV LIST
+************************************************/
+.side-nav-list{
+  float: left;
+  display: block;
+  width:100%;
+  padding:0;
+  margin:0;
+  background: darken($primary, 10%);
+
+  li{
+    list-style: none;
+
+    a{
+      display: block;
+      width:100%;
+      padding-left:15px;
+      padding-right:15px;
+      height:50px;
+      text-decoration: none;
+      color:#fff;
+      border-bottom:1px solid $primary;
+      line-height: 50px;
+
+    }
+  }
+}
