@@ -1,4 +1,4 @@
-.side-nav{
+.sidenav{
   position:fixed;
   left:0;
   top:0;
@@ -7,7 +7,7 @@
   background: $primary;
 
   // SIDE NAV HEADER START
-  .side-nav-header{
+  .sidenav-header{
     width:100%;
     float: left;
     display: block;
@@ -16,6 +16,12 @@
   }
   //SIDE NAV HEADER END
 
+  .sidenav-body{
+    float:left;
+    display: block;
+    width:100%;
+  }
+
 }
 
 
@@ -23,13 +29,12 @@
 /***********************************************
 SIDE NAV LIST
 ************************************************/
-.side-nav-list{
+.sidenav-nav{
   float: left;
   display: block;
   width:100%;
   padding:0;
   margin:0;
-  background: darken($primary, 10%);
 
   li{
     list-style: none;
@@ -42,8 +47,55 @@ SIDE NAV LIST
       height:50px;
       text-decoration: none;
       color:#fff;
-      border-bottom:1px solid $primary;
       line-height: 50px;
+
+      i.material-icons:first-child{
+        float:left;
+        line-height: 50px;
+        margin-right:8px;
+      }
+    }
+
+    &.sidenav-dropdown{
+      float: left;
+      display: block;
+      width:100%;
+
+      a{
+
+        i.material-icons:last-child{
+          float:right;
+          line-height: 50px;
+        }
+      }
+
+      .sidenav-dropdown-menu{
+        float:left;
+        display: block;
+        width:100%;
+        background: darken($primary, 10%);
+
+        ul{
+          float:left;
+          display:block;
+          width:100%;
+          margin:0;
+          padding:0;
+
+          li{
+            list-style: none;
+
+            a{
+              display: block;
+              float: left;
+              width:100%;
+              height: 40px;
+              font-size: 13px;
+              line-height:40px;
+            }
+          }
+        }
+      }
 
     }
   }

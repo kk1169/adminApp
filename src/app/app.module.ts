@@ -11,6 +11,10 @@ import { HeaderComponent } from './component/layout/header/header.component';
 import { SidenavComponent } from './component/layout/sidenav/sidenav.component';
 import { FooterComponent } from './component/layout/footer/footer.component';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +28,9 @@ import { FooterComponent } from './component/layout/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestore
   ],
   providers: [],
   bootstrap: [AppComponent]
